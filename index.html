@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon">
+    <title>Home</title>
+    <style>
+        /* Styling untuk konten panjang */
+        body {
+            height: 2000px; /* Agar ada scroll */
+            background: linear-gradient(to bottom, #ffffff, #ffffff);
+        }
+        #scrollToTop {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none; /* Sembunyikan tombol saat halaman dimuat */
+        }
+        #whatsappBtn {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            z-index: 1000;
+            font-size: 24px; /* Ukuran ikon */
+            color: white; /* Warna teks */
+            background-color: #25D366; /* Warna latar belakang WhatsApp */
+            border: none;
+            border-radius: 50%; /* Membuat tombol bulat */
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .social-icons img {
+        width: 35px;
+        height: auto;
+        }
+        .what img{
+        width: 35px;
+        height: auto;    
+        }
+        .small-img {
+        width: 450px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar navbar-expand-sm bg-dark navbar-dark sticky-sm-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="amg/logo.png" alt="Bootstrap" width="90" height="55">
+            </a>
+          <a class="navbar-brand" href="index.html">Kopira | Kursus</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse nav justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link" href="profile.html">Profile</a>
+              <a class="nav-link" href="galeri.html">Galeri</a>
+              <a class="nav-link" href="tentang.html">About Me</a>
+              <a class="nav-link" href="kontak.html">Contact</a>
+            </div>
+          </div>
+          <div class="collapse navbar-collapse nav justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav d-grid gap-2 d-md-flex justify-content-md-end">
+              <button type="button" class="btn btn-outline-success btn-sm"><a class="nav-link" href="login.html">Sign In</a></button>
+              <button type="button" class="btn btn-outline-info btn-sm"><a class="nav-link" href="daftar.html">Sign Up</a></button>
+            </div>
+          </div>
+        </div>
+    </nav>
+    <div class="container text-center mt-5">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="amg/1.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="amg/2.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="amg/3.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <figure class="text-center">
+                    <blockquote class="blockquote">
+                        <h1>Kenapa harus lebih?.</h1>
+                        <p>KURSUS membuat siapapun punya PELUANG hidup yang lebih baik, lebih sukses, lebih mudah mendapatkan pekeerjaan.</p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer">
+                        Someone famous in <cite title="Source Title">Kang Jurjuran</cite>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </div><br>
+    
+    <header class="bg-dark text-white text-center py-5">
+        <h1>Selamat Datang di Lembaga Kursus</h1>
+        <p>Kursus terbaik untuk meningkatkan kemampuan Anda</p>
+        <a href="galeri.html" class="btn btn-light">Lihat Kursus Kami</a>
+    </header>
+
+    <div class="container mt-5" id="courses">
+        <h2 class="text-center mb-4">Kursus Kami</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="amg/1.png" class="card-img-top" alt="Kursus Bahasa Inggris">
+                    <div class="card-body">
+                        <h5 class="card-title">Kursus Bahasa Inggris</h5>
+                        <p class="card-text">Belajar bahasa Inggris dengan metode yang menyenangkan dan efektif.</p>
+                        <a href="daftar.html" class="btn btn-primary">Daftar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="amg/2.png" class="card-img-top" alt="Kursus Bahasa Jepang">
+                    <div class="card-body">
+                        <h5 class="card-title">Kursus Bahasa Jepang</h5>
+                        <p class="card-text">Menguasai bahasa Jepang dari dasar hingga tingkat lanjutan.</p>
+                        <a href="daftar.html" class="btn btn-primary">Daftar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="amg/3.png" class="card-img-top" alt="Kursus Matematika">
+                    <div class="card-body">
+                        <h5 class="card-title">Kursus Matematika</h5>
+                        <p class="card-text">Meningkatkan pemahaman matematika Anda dengan cara yang menarik.</p>
+                        <a href="daftar.html" class="btn btn-primary">Daftar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><br>
+
+    <div class="container">
+        <div class="row">
+          <div class="col">
+            <h4 style="text-align: center;">Kenapa Harus Belajar?</h4>
+            <p style="text-indent: 30px;">Belajar penting karena memberikan pengetahuan dan keterampilan yang diperlukan untuk berkembang dalam kehidupan pribadi, sosial, dan profesional. Dengan belajar, kita dapat mengatasi tantangan, membuat keputusan yang lebih baik, dan berkontribusi positif bagi masyarakat. Belajar juga membuka peluang untuk mencapai tujuan hidup dan meningkatkan kualitas hidup secara keseluruhan. Selain itu, proses belajar membantu kita untuk berpikir kritis, kreatif, dan adaptif dalam menghadapi perubahan dunia yang terus berkembang.</p>
+          </div>
+          <div class="col">
+                <div class="row justify-content-center">
+                    <video controls autoplay muted class="w-100" style="border: 1px solid #000000;">
+                        <source src="amg/bljr.mp4" type="video/mp4">
+                         Browser Anda tidak mendukung video tag.
+                    </video>
+                </div>
+          </div>
+        </div>
+    </div><br><br>
+
+    <div class="container text-center">
+        <h3>Apa Aja yang Akan Dielajari?</h3><br>
+        <div class="row align-items-start">
+          <div class="col">
+            <div class="card">
+                <img src="amg/kop (2).png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Bahasa Inggris</h5>
+                  <p class="card-text">Dalam kursus bahasa Inggris, peserta akan mempelajari keterampilan berbicara, mendengarkan, membaca, dan menulis, serta tata bahasa dan kosakata untuk berkomunikasi secara efektif dalam berbagai situasi.</p>
+                  <a href="tentang.html#bhsingg" class="btn btn-primary">Read More</a>
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card">
+                <img src="amg/kop (1).png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Bahasa Jepang</h5>
+                  <p class="card-text">Dalam kursus bahasa Jepang, peserta akan mempelajari huruf hiragana, katakana, dan kanji, serta tata bahasa, kosakata, dan keterampilan berbicara untuk berkomunikasi dalam bahasa Jepang sehari-hari.</p>
+                  <a href="tentang.html#bhsjp" class="btn btn-primary">Read More</a>
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card">
+                <img src="amg/kop (3).png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Matematika</h5>
+                  <p class="card-text">Dalam kursus matematika, peserta akan mempelajari konsep-konsep dasar dan lanjutan seperti aljabar, geometri, kalkulus, dan statistik untuk mengembangkan keterampilan pemecahan masalah dan analisis matematis.</p>
+                  <a href="tentang.html#mtk" class="btn btn-primary">Read More</a>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div><br>
+
+      <div class="container">
+        <h2 class="text-center">Jadwal Kursus</h2>
+        <div class="row align-items-center">
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="amg/1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Bahasa Inggris</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Jumat-Minggu</li>
+                    <li class="list-group-item">09.00-11.00 Wib</li>
+                </ul>
+                <div class="card-body">
+                  <a href="tentang.html#jadwal" class="card-link">Selengkapnya...</a>
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="amg/2.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Bahasa Jepang</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Jumat-Minggu</li>
+                    <li class="list-group-item">13.00-15.00 Wib</li>
+                </ul>
+                <div class="card-body">
+                  <a href="tentang.html#jadwal" class="card-link">Selengkapnya...</a>
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="amg/3.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Matematika</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Jumat-Minggu</li>
+                    <li class="list-group-item">20.00-22.00 Wib</li>
+                </ul>
+                <div class="card-body">
+                  <a href="tentang.html#jadwal" class="card-link">Selengkapnya...</a>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div><br><br>
+
+      <div class="mt-4 p-5 bg-dark text-white rounded">
+        <h2 style="text-align: center;">Penguasaan Pembelajaran</h2><br>
+        <div class="container text-center">
+            <div class="row align-items-center">
+              <div class="col">
+                <h1 class="display-1 fw-bold">98%</h1>
+                <p class="fs-5 mb-4">Bahasa Inggris
+              </div>
+              <div class="col">
+                <h1 class="display-1 fw-bold">90%</h1>
+                <p class="fs-5 mb-4">Bahasa Jepang
+              </div>
+              <div class="col">
+                <h1 class="display-1 fw-bold">86%</h1>
+                <p class="fs-5 mb-4">Matematika
+              </div>
+            </div>
+          </div>
+      </div><br><br>
+
+      <div class="container">
+        <h2 class="text-center">Kursus Kami</h2>
+        <div class="row align-items-center">
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="amg/1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Bahasa Inggris</h5>
+                </div>
+                <div class="card-body">
+                  <p class="fw-bold">Rp 400.000</p>
+                  <a href="tentang.html#cuaning" class="card-link">Selengkapnya...</a>
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="amg/2.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Bahasa Jepang</h5>
+                </div>
+                <div class="card-body">
+                  <p class="fw-bold">Rp 500.000</p>
+                  <a href="tentang.html#cuanjpg" class="card-link">Selengkapnya...</a>
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="amg/3.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Matematika</h5>
+                </div>
+                <div class="card-body">
+                  <p class="fw-bold">Rp 600.000</p>
+                  <a href="tentang.html#cuanmtk" class="card-link">Selengkapnya...</a>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div><br>
+
+      <div class="container mt-5">
+        <h2 class="text-center mb-4">Lokasi Kita</h2>
+        
+        <!-- Embed Google Map (Responsive using Bootstrap) -->
+        <div class="ratio ratio-16x9">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.3581715183196!2d109.6167165!3d-6.8968151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7027bcedb67007%3A0xd6994494b3c94e94!2sWarung+DS+crew!5e0!3m2!1sid!2sid!4v1699164307079!5m2!1sid!2sid"
+                style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
+      </div><br>
+
+      <div class="container text-center">
+        <img src="amg/logB.png" class="img-fluid small-img" alt="Logo">
+        <div class="row align-items-center mt-4">
+          <div class="col">
+            <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                  <p>Pengajarnya sabar dan selalu memberi banyak latihan percakapan.</p>
+                  <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Daffa</cite></footer>
+                </blockquote>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                  <p>Pengajaran Bahasa Jepang sangat sistematis, saya bisa menguasai Hiragana dengan cepat!</p>
+                  <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Gazhi</cite></footer>
+                </blockquote>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                  <p>Kelas interaktif dan pengajaran yang jelas membuat belajar jadi cepat dan mudah!.</p>
+                  <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Akhid</cite></footer>
+                </blockquote>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                  <p>Metode pengajaran yang praktis dan mudah diikuti, sangat membantu persiapan ujian.</p>
+                  <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Cafa</cite></footer>
+                </blockquote>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <button id="scrollToTop" class="btn btn-dark"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-eject-fill" viewBox="0 0 16 16">
+        <path d="M7.27 1.047a1 1 0 0 1 1.46 0l6.345 6.77c.6.638.146 1.683-.73 1.683H1.656C.78 9.5.326 8.455.926 7.816zM.5 11.5a1 1 0 0 1 1-1h13a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-13a1 1 0 0 1-1-1z"/>
+      </svg></button>
+      <div class="what">
+      <a id="whatsappBtn" href="https://wa.me/628xxxxxxxxx" target="_blank" title="Chat dengan kami di WhatsApp"><img src="amg/WA.png"></a>
+      </div>
+    <footer class="bg-dark text-white mt-5">
+        <div class="container text-center py-4">
+            <h5>Kopira Kursus</h5>
+            <p>Contact Us: dhetelong@gmail.com | Phone: 0857-2943-0831</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/mas.bray.7587?mibextid=ZbWKwL" class="text-white me-3"><i class="bi bi-facebook"></i><img src="amg/FB.png" class="w-5"></a>
+              <a href="https://wa.me/6285729430831" class="text-white me-3"><i class="bi bi-whatsapp"></i><img src="amg/WA.png" class="w-5"></a>
+              <a href="https://www.instagram.com/telong_11?igsh=azU2M3FxNXlmcDRz" class="text-white"><i class="bi bi-instagram"></i><img src="amg/IG.png" class="w-5"></a>
+            </div>
+            <hr class="my-4">
+            <p>&copy; 2024 Kopira Kursus. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        // Mendapatkan tombol
+        const scrollToTopBtn = document.getElementById("scrollToTop");
+
+        // Menampilkan tombol saat menggulir ke bawah
+        window.onscroll = function() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        };
+
+        // Menyekrol ke atas saat tombol diklik
+        scrollToTopBtn.onclick = function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+    </script>
+</body>
+</html>
